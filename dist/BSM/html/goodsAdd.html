@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>商品添加</title>
+  <link rel="stylesheet" href="../assert/layui/css/layui.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/goodsAdd.css">
+
+</head>
+<body class="layui-layout-body goodsAdd">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">BG后台管理系统</div>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;" class="yonghu">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          贤心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="javascript:;" class="tuichu">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">商品管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="goodslist.html">商品列表</a></dd>
+            <dd><a href="listitem.html">商品分类</a></dd>
+            <dd class="layui-this"><a href="goodsAdd.html">添加商品</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">用户管理</a>
+          <dl class="layui-nav-child">
+            <dd class="lb"><a href="userlist.html">用户列表</a></dd>
+            <dd><a href="userAdd.html"  class="tj">添加用户</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">订单管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="order_form.html">订单列表</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body gl-body">
+  	<span class="layui-breadcrumb">
+      <a href="javascript:;">首页</a>
+      <a href="javascript:;">商品管理</a>
+      <a><cite>商品添加</cite></a>
+    </span>
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;" class="gl-mainbody">
+       <div class="layui-form" action="" lay-filter="example">
+       	<!-- 商品标题 -->
+		<div class="layui-form-item layui-col-md7">
+		    <label class="layui-form-label">商品名称</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+		      <span class="hint">50字以内</span>
+		    </div>
+		</div>
+		 <!-- 商品价格 -->
+		<div class="layui-form-item">
+		   		<div class="layui-inline">
+		      		<label class="layui-form-label">商品价格</label>
+			      	<div class="layui-input-inline">
+				        <input type="tel" name="price"  autocomplete="off" class="layui-input">
+			     	</div>
+		    	</div>
+		    	<div class="layui-inline">
+			     	<label class="layui-form-label">销售价格</label>
+			      	<div class="layui-input-inline">
+			        	<input type="text" name="now_price" lay-verify="text" autocomplete="off" class="layui-input">
+			      </div>
+		    	</div>
+		</div>
+		<!-- 选择框 -->
+		<div class="layui-form-item layui-col-md7">
+		    <label class="layui-form-label">类型</label>
+		    <div class="layui-input-block">
+		      <select name="interest" lay-filter="aihao">
+		        <option class="type" value=""></option>
+		        <option value="0">手机</option>
+		        <option value="1">电脑</option>
+		        <option value="2">平板</option>
+		        <option value="3">配件</option>
+                <option value="4">办公用品</option>
+		        <option value="4">玩具</option>
+		      </select>
+		    </div>
+		</div>
+		<!-- 图片上传 -->
+		<div class="layui-upload layui-form-item uploadImg">
+		  	<button type="button" class="layui-btn" id="test2">图片上传</button>
+		  	<blockquote class="layui-elem-quote layui-quote-nm layui-col-md7" style="margin-top: 10px;">
+		   		 预览图：
+		    	<div class="layui-upload-list" id="demo2"></div>
+		 	</blockquote>
+		</div>
+		<!-- 库存 -->
+		<div class="layui-form-item">
+      		<label class="layui-form-label">库存</label>
+	     	<div class="layui-input-inline">
+		        <input type="tel" name="total" lay-verify="text" autocomplete="off" class="	layui-input">
+	     	</div>
+	    </div>
+	    <!-- 商品属性 -->
+		<div class="layui-form-item">
+		    <label class="layui-form-label">商品属性</label>
+		    <div class="layui-input-block">
+		      <input type="checkbox" name="like[write]" title="热卖">
+		      <input type="checkbox" name="like[read]" title="推荐">
+		      <input type="checkbox" name="like[daze]" title="促销">
+		    </div>
+		</div>
+		<!-- 上架 -->
+		<div class="layui-form-item">
+		    <label class="layui-form-label">上架</label>
+		    <div class="layui-input-block">
+		      <input type="checkbox" name="close" lay-skin="switch" lay-text="ON|OFF">
+		    </div>
+		</div>
+		  <!-- 商品描述 -->
+		<div class="layui-form-item layui-form-text layui-col-md7">
+		    <label class="layui-form-label">商品描述</label>
+		    <div class="layui-input-block">
+		      <textarea placeholder="请输入内容" class="layui-textarea" name="desc"></textarea>
+		    </div>
+		</div>
+		 
+		<div class="layui-form-item">
+		    <div class="layui-input-block">
+		      <button class="layui-btn btnSend" lay-submit="" lay-filter="demo1" id="btnConfirm">确认</button>
+		    </div>
+		</div>
+		</div>
+    </div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+  </div>
+</div>
+<script src="../assert/layui/layui.js"></script>
+<script type="text/javascript" src="../assert/lib/jquery-1.10.1.min.js"></script>
+<script src="../js/cookie.js"></script>
+<script src="../js/goodsAdd.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.layui-form{
+    width: 800px;
+}
+.layui-input{
+    width: 500px;
+}
+.layui-unselect{
+    width: 300px;
+}
+.layui-word-aux{
+    position: absolute;
+    right: 400px;
+}
+.shouji{
+    width: 170px;
+}
+._left{
+    display: inline-block;
+
+}
+.ag{
+    width: 120px;
+}
+.shengri{
+    width: 190px;
+}

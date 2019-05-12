@@ -1,0 +1,82 @@
+[
+        {
+            "id": 10000,
+            "type": "手机",
+            "price": 4000,
+            "num": 1,
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10001,
+            "type": "电脑",
+            "price": 4000,
+            "num": 1,
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10002,
+            "type": "衣服",
+            "price": 4000,
+            "num": 1,
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10005,
+            "type": "鞋类",
+            "price": 4000,
+            "num": 1,
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10006,
+            "type": "水杯",
+            "price": 4000,
+            "num": 1,
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10009,
+            "type": "游戏机",
+            "price": 4000,
+            "num": 1,
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10027,
+            "type": "零食",
+            "price": "40007",
+            "num": "17",
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        },
+        {
+            "id": 10028,
+            "type": "床类",
+            "price": "40008",
+            "num": "18",
+            "carriage": 20,
+            "allPri": 4000,
+            "carPri": 4020,
+            "joinTime": "2019-02-25"
+        }
+    ]

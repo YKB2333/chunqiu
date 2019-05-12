@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5c79e6299f7aa0a989d7c5a2"},"username":"王大力","sex":"男","address":"广州","signature":"u_ss","profession":"死肥宅","grade":250,"regdata":"2016-11-11","oa":1,"password":123}
+{"_id":{"$oid":"5c7d0eb279fc1428dc2c448a"},"username":"老谢","sex":"男","address":"广州","signature":"天有多高人有多骚","profession":"油条","grade":"123","regdata":"22-11-22","oa":0,"password":"123456"}

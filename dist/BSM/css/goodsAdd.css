@@ -1,0 +1,23 @@
+.goodsAdd .layui-input, .goodsAdd .layui-textarea {
+  border-width: 2px;
+}
+.goodsAdd .layui-form-label {
+  font-size: 16px;
+}
+.goodsAdd .layui-input-block {
+  position: relative;
+}
+.goodsAdd .layui-input-block .hint {
+  position: absolute;
+  right: -80px;
+  top: 10px;
+  color: gray;
+}
+.goodsAdd #test2 {
+  display: block;
+}
+.goodsAdd .uploadImg {
+  margin-left: 25px;
+}
+
+/*# sourceMappingURL=goodsAdd.css.map */

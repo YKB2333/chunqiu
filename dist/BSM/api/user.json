@@ -1,0 +1,9 @@
+{"_id":{"$oid":"5c79e6299f7aa0a989d7c5a2"},"username":"王大力","sex":"男","address":"广州","signature":"u_ss","profession":"死肥宅","grade":250,"regdata":"2016-11-11","oa":1,"password":123}
+{"_id":{"$oid":"5c79e6a19f7aa0a989d7c5cf"},"username":"王6","sex":"男","address":"广州","signature":"u_ss","profession":"死肥宅","grade":250,"regdata":"2016-11-11","oa":0,"password":123}
+{"_id":{"$oid":"5c79e6b09f7aa0a989d7c5d5"},"username":"王7","sex":"男","address":"广州","signature":"u_ss","profession":"死肥宅","grade":250,"regdata":"2016-11-11","oa":0,"password":123}
+{"_id":{"$oid":"5c79e6bf9f7aa0a989d7c5d9"},"username":"王8","sex":"男","address":"广州","signature":"u_ss","profession":"死肥宅","grade":250,"regdata":"2016-11-11","oa":0,"password":123}
+{"_id":{"$oid":"5c7d085329c022220cfb0fe6"},"username":"你好","sex":"男","address":"广西","signature":"大家好","profession":"掏包的","grade":"123","regdata":"1111-11-11","oa":"0","password":"123456"}
+{"_id":{"$oid":"5c7d094029c022220cfb0fe7"},"username":"大无畏","sex":"女","address":"魔都","signature":"勇者与恶龙","profession":"要饭","grade":333,"regdata":"2012-09-09","oa":0,"password":123456}
+{"_id":{"$oid":"5c7d0e6279fc1428dc2c4489"},"username":"12345","sex":"男","address":"11111","signature":"12345","profession":"11111","grade":"11111","regdata":"11111","oa":0,"password":"123456"}
+{"_id":{"$oid":"5c7d0eb279fc1428dc2c448a"},"username":"老谢","sex":"男","address":"广州","signature":"天有多高人有多骚","profession":"油条","grade":"123","regdata":"22-11-22","oa":0,"password":"123456"}
+{"_id":{"$oid":"5c7d100179fc1428dc2c448b"},"username":"费玉污","sex":"男","address":"台湾","signature":"嘿嘿嘿","profession":"段子手","grade":"666","regdata":"1111111","oa":0,"password":"111111"}

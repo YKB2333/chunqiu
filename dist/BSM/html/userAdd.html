@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>添加用户</title>
+
+    <link rel="stylesheet" href="../assert/layui/css/layui.css">
+    <link rel="stylesheet" href="../assert/layui/layui.js">
+    <link rel="stylesheet" href="../css/user_add.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">BG后台管理系统</div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <!--  <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+      <li class="layui-nav-item"><a href="">商品管理</a></li>
+      <li class="layui-nav-item"><a href="">用户</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul> -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;" class="yonghu">
+                       贤心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="">基本资料</a>
+                        </dd>
+                        <dd>
+                            <a href="">安全设置</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <ahref="javascript:;" class="tuichu">退了</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">商品管理</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="goodslist.html">商品列表</a>
+                            </dd>
+                            <dd>
+                                <a href="listitem.html">商品分类</a>
+                            </dd>
+                            <dd>
+                                <a href="goodsAdd.html">添加商品</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">用户管理</a>
+                        <dl class="layui-nav-child">
+                            <dd class="lb">
+                                <a href="../html/userlist.html">用户列表</a>
+                            </dd>
+                            <dd >
+                                <a href="../html/userAdd.html" class="tj layui-this">添加用户</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">订单管理</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="order_form.html">订单列表</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div style="padding: 15px;" id="box">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户名：</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入用户名" class="layui-input username">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">签名： </label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username" placeholder="请输入" lay-verify="required" placeholder="" autocomplete="off" class="layui-input signature">
+                    </div>
+                </div>
+            
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码：</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" lay-verify="pass"  autocomplete="off" class="layui-input password">
+                </div>
+                <div class="layui-form-mid layui-word-aux">请填写6到12位密码</div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">确认密码：</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" lay-verify="pass"  autocomplete="off" class="layui-input password2">
+                </div>
+            </div>
+
+        
+                <div class="layui-form-item">
+                    <div class="">
+                        <label class="layui-form-label">住址：</label>
+                        <div class="layui-input-inline">
+                            <input type="text"  class="layui-input shouji address">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">性别选择</label>
+                        <div class="layui-input-inline">
+                            <select name="gender" lay-verify="" class="sex">
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">评分：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="password" lay-verify="title"  class="layui-input shengri grade">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">职业：</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" lay-verify="title" class="layui-input shengri profession">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">添加时间：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" lay-verify="regdata" autocomplete="off" class="layui-input regdata" >
+                        </div>
+    
+                </div>       
+
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">备注：</label>
+                    <div class="layui-input-block">
+                        <textarea class="layui-textarea" placeholder="123123"></textarea>
+                    </div>
+                </div>
+    
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            © layui.com - 底部固定区域
+        </div>
+    </div>
+    <script src="../assert/lib/jquery-1.10.1.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../assert/layui/layui.js"></script>
+    <script src="../js/useradd.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+</body>
+
+</html>

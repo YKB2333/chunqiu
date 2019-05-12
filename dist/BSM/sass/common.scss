@@ -1,0 +1,18 @@
+
+.layui-breadcrumb{
+	visibility: visible;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    height: 30px;
+    display: block;
+}
+.layui-layer-dialog{
+	display: none;
+	z-index: 19891018;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}

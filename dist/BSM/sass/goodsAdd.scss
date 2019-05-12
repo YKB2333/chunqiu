@@ -1,0 +1,23 @@
+.goodsAdd{
+	.layui-input, .layui-textarea{
+		border-width: 2px;
+	}
+	.layui-form-label{
+		font-size: 16px;
+	}
+	.layui-input-block{
+		position: relative;
+		.hint{
+			position: absolute;
+		    right: -80px;
+		    top: 10px;
+		    color: gray;
+		}
+	}
+	#test2{
+		display: block;
+	}
+	.uploadImg{
+		margin-left: 25px;
+	}
+}
